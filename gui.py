@@ -3,9 +3,13 @@ from tkinter import messagebox
 from age_checker import check_age
 
 def handle_check_age():
-    age=int(age_entry.get())
-    result = check_age(age)
-    result_label.config(text=result)
+    try:
+        age=int(age_entry.get())
+        result = check_age(age)
+        result_label.config(text=result)
+    
+    except ValueError:
+        messagebox.showerror("Invalid Input", "Please enter a valid positive age")
 
 root=Tk()
 root.title("Age Checker")
