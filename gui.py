@@ -41,3 +41,5 @@ root.mainloop()
 #because the program needs to recognize the text put it in a number
 #Because we don't want to print the function, like running it in the GUI, we just want to make it in the background
 #A value Error is displayed in the terminal
+#If the age is less than 0
+#because it could have a better understand of what went wrong
